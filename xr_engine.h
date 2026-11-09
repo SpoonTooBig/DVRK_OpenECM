@@ -8,7 +8,10 @@
 #include <openxr/openxr.h>
 #include <openxr/openxr_platform.h>
 
+
 namespace EcmXr {
+    // NEW: Listens to the VR headset state changes (wake, sleep, connect)
+    bool PollEvents(XrInstance instance, XrSession session, bool& sessionRunning);
 
     // Structure to hold our active Vulkan context variables
     struct VulkanContext {

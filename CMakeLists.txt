@@ -20,7 +20,7 @@ set(XR_LIBRARY "/home/careslab/OpenXR-SDK-Source/build/src/loader/libopenxr_load
 
 # 6. Define the Executable Target
 # This tells CMake: Build a binary called "openecm_xr" using the source file "main.cpp"
-add_executable(openecm_xr main.cpp xr_engine.cpp)
+add_executable(openecm_xr main.cpp xr_engine.cpp xr_renderer.cpp)
 
 # 7. Include Directories (Where the compiler looks for #include <...> statements)
 target_include_directories(openecm_xr PRIVATE 
